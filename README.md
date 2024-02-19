@@ -23,7 +23,13 @@ The system extracts feature vectors from images based on the selected methods fo
 
 ### Image Comparison
 
-To compare images, the system computes the distance between their feature vectors using various distance measures such as Euclidean distance. Images with similar visual content are ranked higher in the retrieval results.
+To compare images, the system computes the distance between their feature vectors using various distance measures:
+
+- Euclidean Distance: Measures the straight-line distance between two points in Euclidean space.
+- Cityblock (Manhattan) Distance: Measures the distance between two points in a grid based on strictly horizontal, vertical, and diagonal paths.
+- Correlation Distance: Measures the correlation between two feature vectors.
+- Canberra Distance: A weighted version of Manhattan distance that takes into account the relative scaling of different features.
+Images with similar visual content are ranked higher in the retrieval results.
 
 ## Usage
 
